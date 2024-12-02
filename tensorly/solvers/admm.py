@@ -272,9 +272,7 @@ def admm_super(
             l1_reg=l1_reg,
             l2_reg=l2_reg,
         )
-        if n_const is None:
-            x = tl.transpose(tl.solve(tl.transpose(UtU), tl.transpose(UtM)))
-            return x, x_split, dual_var
+
         dual_var = dual_var + x - tl.transpose(x_split)
 
         dual_residual = x - tl.transpose(x_split)
