@@ -474,7 +474,6 @@ def constrained_parafac(
                     )
 
                 #if constraint_error < tol_outer:
-                #    print("Hey")
                 #    break
                 if cvg_criterion == "abs_rec_error":
                     stop_flag = tl.abs(rec_error_decrease) < tol_outer

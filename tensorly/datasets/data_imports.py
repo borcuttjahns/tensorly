@@ -116,10 +116,6 @@ def load_IL2data():
     )
 
 
-def printHI():
-    print("HI")
-
-
 def load_covid19_serology():
     """
     Load an example dataset of COVID-19 systems serology.
